@@ -1,0 +1,111 @@
+meta(charset="UTF-8")
+meta(http-equiv="X-UA-Compatible", content="IE=edge")
+meta(name="viewport", content="width=device-width,initial-scale=1")
+title Document
+script(defer, src="/script.js")
+link(rel="stylesheet", href="style.css")
+#resources.search(data-resource=`${allResources}`)
+  button.btn.all All sorted books and magazines
+  .searchbar
+    input#inputquery(type="text", name="search", placeholder="Search by ISBN")
+    .downbutton
+      button.btn.down ↓
+      .hidden
+        li
+          button.btn.chooseisbn Search by ISBN
+        li
+          button.btn.choosetitle Search by email
+    button.btn.search--btn(type="submit") Search
+  button.btn.reset Reset
+.table-books__div
+  h1 Books
+  table.bodytablebooks
+    tbody
+      tr.row.main
+        th Title
+        th Authors
+        th ISBN
+        th Description
+.table-magazine__div
+  h1 Magazines
+  table.bodytablemagazines
+    tbody
+      tr.row.main
+        th Title
+        th Authors
+        th ISBN
+        th Published At
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//- meta(charset="UTF-8")
+//- meta(http-equiv="X-UA-Compatible", content="IE=edge")
+//- meta(name="viewport", content="width=device-width,initial-scale=1")
+//- title Document
+//- link(rel="stylesheet", href="/style.css")
+//- #resources.search(data-resource=`${JSON.stringify(allResources)}`)
+//-   input(type="text", name="search", placeholder="Isbn")
+//-   .downbutton
+//-     button.btn.down ↓
+//-     .hidden
+//-       li
+//-         button.btn.chooseisbn Search by ISBN
+//-       li
+//-         button.btn.choosetitle Search by title
+//-   button.btn.search--btn(type="submit") Search
+//- .table-books
+//-   h1 Books
+//-   table.books--table
+//-     tbody
+//-       tr
+//-         th Title
+//-         th Author
+//-         th Isbn
+//-         th Description
+//-       tr
+//-         td Javascript for beginners
+//-         td Agba Hayzed
+//-         td 4875497454
+//-         td.
+          
+//-           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores alias eaque expedita culpa nihil, sit aspernatur velit hic vitae maiores necessitatibus atque omnis quas officiis repellat, iusto ullam porro ducimus!
+          
+//-       tr
+//- .table-magazine
+//-   h1 Magazines
+//-   table.magazine--table
+//-     tbody
+//-       tr
+//-         th Title
+//-         th Author
+//-         th Published
+//-         th Description
+//-       tr
+//-         td hfbud
+//-         td hbfdf
+//-         td
+//-         td
+//- button.btn.reset Reset
+//- button.btn.all All books and magazines
+
+
+
+
+//-  `${JSON.stringify(allResources)}`
+
+
+
