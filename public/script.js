@@ -167,7 +167,9 @@ search.addEventListener("click", function () {
     resetBtn.insertAdjacentHTML("beforeend", errHTML());
     setTimeout(() => {
       document.querySelector(".error").remove();
-    }, 4000);
+    }, 3000);
+    inputQuery.value = "";
+
     return;
   }
   clearInnerHTML();
