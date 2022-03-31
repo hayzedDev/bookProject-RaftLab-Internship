@@ -66,9 +66,6 @@ exports.getOverview = async (req, res, next) => {
 
   const allResources = JSON.stringify({ bookArr, authors, magazinesArr });
 
-  console.log(11);
-  //   console.log(allResources);
-
   res.status(200).render("index", {
     allResources,
   });

@@ -6,8 +6,6 @@ const app = express();
 
 app.use(express.static(`${__dirname}/public`));
 
-// app.engine("pug", require("pug").__express);
-
 app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "views"));
 
